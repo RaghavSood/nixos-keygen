@@ -179,7 +179,7 @@
 	  system.activationScripts.nixos-home = ''
 	    mkdir -p /var/www/tools/{bitaddress,iancolemanbip39}
 	    cp --recursive ${bitaddressFiles} /var/www/tools/bitaddress
-	    cp ${iancolemanFile} /var/www/tools/iancolemanbip39/iancoleman.html
+	    cp --recursive ${iancolemanFile} /var/www/tools/iancolemanbip39
           '';
 
           # ISO image configuration
